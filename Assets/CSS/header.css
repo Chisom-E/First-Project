@@ -14,15 +14,16 @@
 .header{
     height: 80px;
     width: 100%;
-    background-color: var(--color-gray-950);
+    background-color: var(--color-grayt-950);
     display: flex;
     align-items: center;
     position: sticky;
     border-bottom: 1px solid var(--color-gray-700);
     justify-content: space-between;
     z-index: 1000; 
-top: 0px;
-padding: 0px 0px 0px 90px ;
+    backdrop-filter: blur(10px);
+    top: 0px;
+    padding-left: 90px ;
 }
 .navbar{
      flex: 1;
@@ -49,7 +50,7 @@ padding: 0px 0px 0px 90px ;
     color: var(--color-gray-400);
     gap: 10px;
     display: flex;
-    /* padding-right: 40px; */
+    padding-right: 40px;
     /* justify-content: center; */
 }
 .icons i{
@@ -89,6 +90,7 @@ padding: 0px 0px 0px 90px ;
         position: sticky;
         height: 64px;
         width: 100%;
+        padding: 10px;
     }
     .navbar{
         display: none;
@@ -100,6 +102,7 @@ padding: 0px 0px 0px 90px ;
     }
     .icons{
         order: 3;
+        padding-right: 10px;
     }
     .navtogglebtn{
         display: block;

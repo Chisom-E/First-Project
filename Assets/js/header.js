@@ -20,3 +20,10 @@ navtogglebtn.addEventListener("click", function() {
     }
     console.log(navbar.classList);
 });
+
+let love = document.querySelectorAll('.love');
+love.forEach(item => {
+    item.onclick = () => {
+        item.classList.toggle('present');
+    }
+})
