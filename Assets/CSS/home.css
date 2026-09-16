@@ -110,29 +110,6 @@ h1 span{
     margin-top: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-@media screen and (max-width:1000px) {
-    .heroCont{
-        padding: 70px 10px;
-    }
-    h1{
-        font-size: 45px;
-    }
-    .para{
-         font-size: 1.1rem;
-    }
-}
-@media screen and (max-width:640px) {
-    .heroBtn{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .firstBtn{
-        width: 100%;
-    }
-    .secondBtn{
-        width: 100%;
-    }
-}
 .Container{
     display: flex;
    
@@ -225,22 +202,16 @@ border-right: none;
 .benefitIconB i{
     color: var(--color-green-500);
 }
-@media screen and (max-width:1023px) {
-    .benefit{
-        display: none;
-    }
-}
 
 .body{
-    /* width: 100%; */
     background-color: var(--color-gray-950);
     border-top: 1px solid var(--color-gray-700);
 }
 .perks{
-    max-width: 1200px;
-    /* width: 100%; */
+    width: 90%;
     margin: auto;
-    padding: 35px 30px;
+    padding-top: 35px;
+    padding-bottom: 50px;
      display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -277,36 +248,22 @@ border-right: none;
     font-size: 15px;
     font-weight: 400;
 }
-@media screen and (max-width:1023px) {
-    .perks{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding-left: 10px;
-    }
-}
-@media screen and (max-width:640px) {
-    .perks{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
 .featuredProducts{
     background-color: var(--color-gray-950);
-    border-bottom: 1px solid var(--color-gray-700);
+    padding-bottom: 100px;
 }
 .products{
     display: flex;
     justify-content: space-between;
-   padding: 30px;
+ padding: 30px;
     border-top: 1px solid var(--color-gray-700);
 }
 .first{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 30px;
     margin-top: 20px;
+    margin-left: 30px;
 }
 .first h1{
     color: var(--color-white);
@@ -326,17 +283,6 @@ border-right: none;
     margin-right: 50px;
     margin-top: 50px;
     font-size: 1rem;
-}
-@media screen and (max-width: 640px) {
-   .products{
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-   }
-   .products a{
-    margin-left: 30px;
-    margin-top: 5px;
-   } 
 }
 .product-desc{
     display: flex;
@@ -409,7 +355,7 @@ border-right: none;
     margin: auto;
     gap: 20px;
 }
-.cards .image{
+.image{
     width: 100%;
     height: 381.33px;
     overflow: hidden;
@@ -423,10 +369,10 @@ border-right: none;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
-.cards .image:hover img{
+ .image:hover img{
     transform: scale(1.1);
 }
-.cards .picture{
+ .picture{
     position: relative;
     overflow: hidden;
 }
@@ -440,25 +386,6 @@ border-right: none;
 opacity: 1;
 transform: scale(1.05);
 }
-@media screen and (max-width:1023px) {
-    .imageContainer{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-    
-}
-@media screen and (max-width:640px) {
-    .imageContainer{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    .cards .image{
-        height: 550px;
-    }
-}
-
 .picture .box{
     position: absolute;
     display: flex;
@@ -472,7 +399,6 @@ transform: scale(1.05);
     background-color: var(--color-red-500);
     border-radius: 20px;
     margin-left: 10px;
-    
 }
 .discount{
     margin-left: 10px;
@@ -540,8 +466,7 @@ transform: scale(1.05);
 }
 .cart-actions{
     position: absolute;
-    bottom: 10px;
-    /* left: 30px; */
+    bottom: 20px;
     display: flex;
     gap: 10px;
     justify-self: center;
@@ -571,11 +496,859 @@ transform: scale(1.05);
     opacity: 1;
     transform: scale(1.05);
 }
-@media screen and (max-width:640px){
-   .add-cart{
-    width: 350px;
-   }
-}
+
 .present{
     color: var(--color-red-700);
+}
+.CategorySection{
+    background-color: var( --color-gray-900);
+}
+.categoryHead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding-top: 90px;
+   gap: 15px;
+}
+.categoryHead h3{
+    color: var(--color-white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+}
+.categoryHead p{
+    color: var(--color-gray-400);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+ .categoryImages{
+    display: grid;
+     grid-template-columns: repeat(3, 1fr) ;
+    /* grid-template-rows: repeat(3, 1fr) ;  */
+    gap: 25px;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, transparent 40%, rgba(6, 32, 70, 0.7));
+}
+.categoryImages img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+ .clothingImage{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    grid-row: 1/3 ; 
+}
+ .accessoryImage{ 
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    border-radius: 18px;
+ }
+.footwearImage{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+}
+.bagImage{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+}
+.jewelryImage{
+    overflow: hidden;
+    position: relative;
+    border-radius: 18px;
+}
+.watchImage{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+} 
+.categoryImages :hover img{
+    transform: scale(1.08);
+}
+.categoryImages-text{
+ position: absolute;
+ display: flex;
+ flex-direction: column;
+ gap: 8px;
+ bottom: 40px;
+ left: 20px;
+ color: var(--color-white);
+} 
+.categoryImages-text span{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.categoryImages :hover .categoryImages-text span{
+    opacity: 1;
+}
+.NewarrivalsSection{
+    padding-top: 80px;
+}
+.newarrivalsHead{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.justdropped{
+display: flex;
+flex-direction: column;
+}
+.firstdrop{
+    display: flex;
+    gap: 5px;
+}
+.C-green{
+    height: 8px;
+    width: 8px;
+    background-color: var(--color-green-500);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.firstdrop p{
+    color: var(--color-green-500);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.new{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.new h2{
+    color: var(--color-white);
+    font-size: 2.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+.new p{
+    color: var(--color-gray-400);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.newarrivalsHead span{
+    color: var(--color-primary-500);
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.newarrivalsImages{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin:0 auto;
+    gap: 20px;
+    padding-bottom: 45px;
+}
+.SalesSection{
+    background: linear-gradient(to right, var(--color-primary-600), var(--color-primary-800));
+}
+.salesHead{
+    display: flex;
+    justify-content: space-between;
+    padding: 90px;
+}
+.round-box{
+    width: 179.77px;
+    height: 32px;
+    border-radius: 20px;
+    background-color: var(--color-primary-400);
+    display: inline flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.salesHead-Left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.salesHead-Left h2{
+    color: var(--color-white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.2rem;
+}
+.salesHead-Left p{
+    color: var(--color-white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+
+}
+.salesHead-Right{
+    width: 177.25px;
+    height: 48px;
+    background-color: var(--color-white);
+    display: inline-flex;
+    justify-content:center ;
+    align-items: center;
+    border-radius: 10px;
+}
+.salesHead-Right a{
+    text-decoration: none;
+    color: var(--color-primary-600);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.salesImageCont{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: auto; 
+
+}
+.salesCard{
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-gray-900);
+    border-radius: 10px;
+}
+.salesCard .image{
+    width: 100%;
+    height: 360px;
+    position: relative;
+    width: 90%;
+    margin: auto;
+   margin-top: 14px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.salesCard .image img{
+    width: 100%;
+    height: 100%;
+     border-radius: 10px;
+     object-fit: cover;
+ transition: transform 0.5s ease;
+
+}
+.salesCard .image:hover img{
+    transform: scale(1.08);
+}
+.salesCards .picture{
+    position: relative;
+    overflow: hidden;
+}
+.salesCard .picture .image-two{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.salesCard .picture .image-two:hover{
+opacity: 1;
+transform: scale(1.05);
+}
+.salesCard .box{
+    position: absolute;
+    top: 20px;
+}
+.salesCard .cart-actions{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
+   left: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.8s ease;
+}
+.salesCard .add-cart{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+     width: 190px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.salesCard .image:hover .cart-actions{
+    opacity: 1;
+    transform: scale(1.05);
+}
+.salesCard-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 13px;
+
+}
+.salesCard-texts h3{
+    color: var(--color-white);
+    
+}
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 35px;
+
+}
+.time-box{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.number{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary-600);
+    border-radius: 10px;
+    color: var(--color-white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.time-box p{
+    color: var(--color-white);
+    margin-top: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.colon{
+    color: var(--color-white);
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.customerSection{
+background-color: var(--color-gray-950);
+}
+.customersectHead{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* justify-self: center; */
+    margin: auto;
+    width: 90%;
+}
+.customersectHead h1{
+    color: var(--color-white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+   padding-top: 90px;
+   align-self: center;
+   /* margin-left: 40px; */
+}
+.customersectHead p{
+    color: var(--color-gray-400);
+    word-spacing: 3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    
+    align-self: center;
+}
+.reviewcardCont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+.reviewcards{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-gray-900);
+    border: 1px solid var(--color-gray-800);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--color-gray-300);
+}
+.stars{
+    color: var(--color-yellow-400);
+    font-size: 15px;
+    display: flex;
+    gap: 8px;
+}
+.testimony{
+    color: var(--color-gray-300);
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.customer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.customerdetails{
+    display: flex;
+    gap: 10px;
+}
+.customerdetails img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.customerinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.customerinfo h4{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.customerinfo p{
+    color: var(--color-gray-500);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.verifystatus{
+    display: flex;
+    width: 80px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-green-900);
+    border-radius: 15px;
+    font-size: 13px;
+    color: var(--color-green-500);
+}
+.verifystatus span{
+    display: flex;
+    gap: 5px;
+    font-weight: 600;
+}
+.line{
+width: 90%;
+margin: 60px auto;
+border-top: 1px solid var(--color-gray-700);
+}
+.customerreviewBottom{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    gap: 30px;
+    padding-bottom: 90px;
+}
+.trust{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-gray-400);
+}
+.trust i{
+    font-size: 25px;
+}
+.trust span{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.plusbackgroundSection{
+   background-color: var(--color-gray-900);
+    background-image:
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 33V47M33 40H47' stroke='white' stroke-opacity='0.22' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-size: 40px;
+    padding-bottom: 90px;
+}
+.plusCont{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    padding-top: 60px;
+    width: 90%;
+    margin: auto;
+    gap: 40px;
+}
+.plusRight{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.plusRight h2{
+    color: var(--color-white);
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+}
+.sign{
+    color: var(--color-gray-300);
+    max-width: 580px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+}
+.emailsubCont{
+    display: flex;
+    gap: 20px;
+}
+.emailbox{
+    width: 425.61px;
+    height: 58px ;
+    background-color: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid var(--color-gray-700);
+    display: inline-flex;
+    align-items: center;
+    padding-left: 10px;
+    color: var(--color-gray-400);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.subscribebox{
+    background-color: var(--color-primary-500);
+    width: 142.39px;
+    height: 58px;
+    border: none;
+    border-radius: 10px;
+    color: var(--color-white);
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.subscribebox:hover{
+    background-color: var(--color-primary-700);
+}
+.privacy{
+    color: var(--color-gray-400);
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.plusLeft{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.plusLeft-card{
+    /* width: 280px;
+    height: 184px; */
+    background-color: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+
+}
+.plusLeft-card h4{
+    color: var(--color-white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.plusLeft-card p{
+    color: var(--color-gray-500);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.plusLeft-iconCont1{
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-primary-950);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.plusLeft-iconCont1 i{
+    color: var(--color-primary-400);
+    font-size: 20px;
+}
+.plusLeft-iconCont2{
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-accent-900);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plusLeft-iconCont2 i{
+    color: var(--color-accent-500);
+    font-size: 20px;
+}
+.plusLeft-iconCont3{
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-green-900);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plusLeft-iconCont3 i{
+    color: var(--color-green-500);
+    font-size: 20px;
+}
+.plusLeft-iconCont4{
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-blue-950);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plusLeft-iconCont4 i{
+    color: var(--color-blue-600);
+    font-size: 20px;
+}
+.newsletter{
+    background-color: var(--color-gray-900);
+    border-bottom: 1px solid var(--color-gray-700);
+}
+.news{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.right h3{
+    color: var(--color-white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+}
+.right p{
+    color: var(--color-gray-400);
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.left{
+    display: flex;
+    gap: 10px;
+}
+.email{
+    width: 309.61px;
+    height: 50px;
+    background-color: var(--color-gray-800);
+    display: inline-flex;
+    align-items: center;
+    padding-left: 10px;
+    color: var(--color-gray-500);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    border: 1px solid var(--color-gray-700);
+    border-radius: 10px;
+}
+.sub{
+    background-color: var(--color-primary-500);
+    width: 126.39px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: var(--color-white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.sub:hover{
+    background-color: var(--color-primary-700);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA SCREENS  SECTION*/
+@media screen and (max-width:1023px) {
+    .heroCont{
+        padding: 70px 10px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .para{
+         font-size: 1.1rem;
+    }
+    .benefit{
+        display: none;
+    }
+    .imageContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        gap: 15px;
+    }
+    .perks{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+    }
+    .newarrivalsImages{
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+    }
+    .categoryImages{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        gap: 20px;
+    }
+    .clothingImage{
+        grid-column: 1/3;
+    }
+    .salesImageCont{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       width: 97%;
+    }
+    .reviewcardCont{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 95%;
+    }
+    .plusCont{
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin: auto;
+    }
+    .news{
+        flex-direction: column;
+        gap: 20px;
+        width: 95%;
+    }
+}
+/* MEDIA SCREEN OF 767PX */
+@media screen and (max-width:767px) {
+    .reviewcardCont{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MOBILE MEDIA SCREEN OF 640PX*/
+@media screen and (max-width:640px) {
+    .heroBtn{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .firstBtn{
+        width: 100%;
+    }
+    .secondBtn{
+        width: 100%;
+    }
+    .perks{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .products{
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+   }
+   .products a{
+    margin-left: 30px;
+    margin-top: 5px;
+   } 
+   .imageContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .cards .image{
+        height: 550px;
+    }
+    .newarrivalsHead{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .newarrivalsHead span{
+           margin-left: 50px;
+    }
+    .newarrivalsImages{
+        grid-template-columns: 1fr;
+    }
+    .salesHead{
+        flex-direction: column;
+        margin-left: 30px;
+        gap: 10px;
+    }
+    .cart-actions{
+        width: 100%;
+    justify-content: center;
+    }
+    .add-cart{
+  width: 350px;
+    }
+   .categoryImages{
+    grid-template-columns: 1fr;
+   }
+   .clothingImage{
+    grid-column: auto;
+   }
+   .salesImageCont{
+    grid-template-columns: 1fr;
+   }
+   .salesCard .cart-actions{
+    width: 100%;
+    justify-content: center;
+     right: 10px;
+   }
+  .salesCard .add-cart{
+    width: 300px;
+  }
+  .plusCont{
+    display: flex;
+    flex-direction: column;
+  }
+ .plusRight h2{
+   font-size: 30px;
+   text-align: center;
+ }
+ .sign{
+    font-size: 20px;
+    text-align: center;
+   /* width: 460px; */
+ }
+ .privacy{
+    font-size: 15px;
+    text-align: center;
+ }
+  .emailsubCont{
+    flex-direction: column;
+  }
+  .emailbox{
+    width: 100%;
+  }
+  .subscribebox{
+    width: 100%;
+  }
+  .plusLeft{
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
 }
