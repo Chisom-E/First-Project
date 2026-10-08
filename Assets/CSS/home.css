@@ -1309,13 +1309,9 @@ border-top: 1px solid var(--color-gray-700);
     grid-template-columns: 1fr;
    }
    .salesCard .cart-actions{
-    width: 100%;
-    justify-content: center;
+    /* justify-content: center; */
      right: 10px;
    }
-  .salesCard .add-cart{
-    width: 300px;
-  }
   .plusCont{
     display: flex;
     flex-direction: column;

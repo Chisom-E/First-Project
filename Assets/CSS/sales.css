@@ -34,9 +34,9 @@
     font-size: 15px;
 }
 .salesHero{
-    background-image: url(../Images/sales.png);
+    background-image: url(../Images/a81f06924a905fcc1722e5ea28580ac9.jpg);
 background-size: cover;
-/* background-position: center; */
+background-position: center;
 height: 60vh;
 }
 .salesHead{
@@ -334,9 +334,6 @@ position: relative;
     }
     .salesimageCont{
         grid-template-columns: repeat(2, 1fr);
-    }
-    .cart-actions{
-        width: 80%;
     }
     .secondheader{
         padding: 20px;
