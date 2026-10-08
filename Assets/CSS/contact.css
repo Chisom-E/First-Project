@@ -1,0 +1,20 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./style.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contact-hero{
+    background-image: url(../Images/hero.PNG);
+    height: 50vh;
+}
+.heroCover{
+background: linear-gradient(rgba(5, 17, 36, 0.8),rgba(5, 23, 41, 0.7), rgba(10, 5, 15, 0.1));
+  min-height: 100vh;
+  height: auto;
+  background-size: cover;
+  position: relative;
+}
