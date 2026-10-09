@@ -21,7 +21,7 @@
     border-bottom: 1px solid var(--color-gray-800);
     justify-content: space-between;
     z-index: 1000; 
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(19px);
     top: 0px;
     padding-left: 90px ;
 }
@@ -93,7 +93,7 @@
         position: sticky;
         height: 64px;
         width: 100%;
-        padding: 10px;
+        padding-left: 10px;
     }
     .navbar{
         display: none;
