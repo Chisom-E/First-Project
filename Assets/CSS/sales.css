@@ -363,9 +363,11 @@ position: relative;
          grid-template-columns: 1fr;
           gap: 20px;
           justify-content: center;
+          width: 95%;
     }
     .sidebar{
      flex-direction: row;
+     width: 95%;
     }
     .left{
     flex-direction: column;
