@@ -219,6 +219,7 @@ flex-direction: column;
     height: 100%;
     display: block;
     object-fit: cover;
+    
     transition: transform 0.4s ease;
 }
 .image:hover img{
@@ -387,6 +388,7 @@ flex-direction: column;
     margin: auto;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
 }
 .right{
     display: flex;
@@ -466,9 +468,11 @@ flex-direction: column;
     flex-direction: column;
   }
   .email{
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
   .subscribebox{
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
 }

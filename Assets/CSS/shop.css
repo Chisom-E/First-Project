@@ -352,9 +352,12 @@ padding: 20px;
   }
   .Sales-main{
     grid-template-columns: 1fr;
+    
   }
   .sidebar{
-    display: none;
+    width: 95%;
+    flex-direction: row;
+
   }
   .email{
     width: 100%;

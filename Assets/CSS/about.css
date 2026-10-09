@@ -416,6 +416,7 @@
     margin: auto;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
 }
 .right{
     display: flex;
@@ -545,5 +546,13 @@
   .plusLeft{
     grid-template-columns: 1fr;
     margin-top: 20px;
+  }
+  .email{
+    width: 90%;
+    margin: auto;
+  }
+  .sub{
+    width: 90%;
+    margin: auto;
   }
 }

@@ -254,9 +254,11 @@
     flex-direction: column;
   }
   .email{
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
   .subscribebox{
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
 }
