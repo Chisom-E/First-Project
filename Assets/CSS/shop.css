@@ -72,7 +72,7 @@ padding: 20px;
 .sidebar{
    display: flex;
    flex-direction: column;
-   gap: 60px;
+   gap: 20px;
   color: var(--color-gray-400);
 }
 .category :hover a{

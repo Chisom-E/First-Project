@@ -93,7 +93,7 @@ padding-top: 60px;
 .sidebar{
    display: flex;
    flex-direction: column;
-   gap: 60px;
+   gap: 20px;
   color: var(--color-gray-400);
 }
 .category{
@@ -367,7 +367,7 @@ position: relative;
     }
     .sidebar{
      flex-direction: row;
-     width: 95%;
+     
     }
     .left{
     flex-direction: column;
