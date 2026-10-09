@@ -41,7 +41,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-   background: linear-gradient( rgba(0, 7, 17, 0.877));
+   background: linear-gradient( rgba(0, 7, 17, 0.7));
 }
 .category-texts{
     position: absolute;
